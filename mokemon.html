@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Appetite For Destruction</title>
+        <link rel="stylesheet" href="./styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id = "seleccionar-mascota">
+                <h1 class="titulo">Appetite For Destruction</h1>
+
+                <h2 class="subtitulo">Choose Your Dragon</h2>
+                <div id="contenedorTarjetas" class="tarjetas">
+                </div>
+                <button id="button-seleccion">Select</button>
+        </section>
+        <section id="ver-mapa">
+            <h1 class="titulo">walk the dungeon with your dragonn</h1>
+            <canvas id="mapa"></canvas>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">↑</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">←</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">↓</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">→</button>
+        </section>
+        <section id = "seleccionar-ataque">
+                <h1 class="titulo">Appetite For Destruction</h1>
+                <h2 class="subtitulo">Choose Your Attack</h2>
+                <h2>Choose Your Power</h2>
+                <div id="contenedorAtaques" class="tarjetaAtaques">
+                </div>
+                <div>
+        <section id="mensajes">
+                 <P id="resultado">GO</P>
+        </section>
+        <section id = "reiniciar">
+                <button id="button=reiniciar" class="boton-reiniciar">RETURN</button>    
+        </section>
+                </div>
+                <div class="ataques">
+                    <div class="ataquesJ">
+                        <p id="pp">You</p>
+                        <P id = "vidas-jugador">0</P>
+                        <P id="mascota-jugador"></P>
+                        <div id="ataques-jugador"></div>
+                    </div>
+                    <div class="ataquesE">
+                        <p id="pp">Your Opponent</p>
+                        <P id = "vidas-enemigo">0</P>
+                        <P id="mascota-enemigo"></P>
+                        <div id="ataque-enemigo"></div>
+                    </div>
+                </div>
+        </section>
+        <script src="./js/mokemon.js"></script>
+    </body>
+</html>

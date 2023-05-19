@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+}
+
+body {
+    background-color: #18122B;
+    color: #810CA8;
+}
+
+.titulo{
+    border-bottom: 3px solid #0A2647;
+    color: #0A2647;
+    background-color: #635985;
+    background-image: linear-gradient(225deg, #784BA050, #2B86C510);
+    width: 100%;
+    border-radius: 10px10px00px;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: -1px0#8EC046, 01px#33B0FE, 1px0#33B0FE, 0 -1px#8EC046;
+}
+
+.subtitulo {
+    margin: 10px;
+    color: #635985;
+    font-style: italic;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 20px;
+    background-color: #6D67E4;
+    border-radius: 20px;
+
+}
+
+.tarjetas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tarjeta-de-mokemon {
+    background-color: #0E1830;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #33B0FE;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tarjeta-de-mokemon:hover{
+    background-color: #E5B8F4;
+    background-image: linear-gradient(225deg, #784BA050, #2B86C510);
+    
+}
+
+.tarjeta-de-mokemon {
+    margin-bottom: 10px;
+}
+
+.tarjeta-de-mokemon img {
+    width: 100%;
+    height: 80%;
+}
+
+input {
+    display: none;
+}
+input:checked + label{
+    background-color: #33B0FE;
+}
+
+#button-seleccion {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 0px;
+    background-image: linear-gradient( 83.2deg,  rgb(15, 14, 16) 10.8%, rgba(99,88,238,1) 94.3% );
+    color: #121F3D;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0px0px10px10px;
+}
+
+#button-seleccion:hover{
+    background-image: radial-gradient( circle farthest-corner at 10%20%,  rgba(244,164,96,1) 0%, rgba(143,188,143,1) 90% );
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.boton-ataque {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 0px;
+    background-image: linear-gradient( 83.2deg,  rgb(15, 14, 16) 10.8%, rgba(99,88,238,1) 94.3% );
+    color: #6D67E4;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0px0px10px10px;
+}
+
+.boton-ataque:hover{
+    background-image: radial-gradient( circle farthest-corner at 10%20%,  rgba(244,164,96,1) 0%, rgba(143,188,143,1) 90% );
+}
+.boton-reiniciar {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 0px;
+    background-image: linear-gradient( 83.2deg,  rgb(15, 14, 16) 10.8%, rgba(99,88,238,1) 94.3% );
+    color: #6D67E4;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0px0px10px10px;
+}
+
+.boton-reiniciar:hover{
+    background-image: radial-gradient( circle farthest-corner at 10%20%,  rgba(244,164,96,1) 0%, rgba(143,188,143,1) 90% );
+}
+
+#mensajes{
+    width: 280px;
+    background: #33B0FE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}   
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+@media (max-width:360px){
+    #tarjetas{
+        flex-direction: column;
+    }
+
+    .titulo {
+        color: var(--Colortres);
+        font-size: 60px;
+    }
+
+    .sub-titulo{
+        color: var(--Colortres);
+        font-size: 25px;
+    }
+    #vidas-Mensajes {
+        width: 140px;
+    }
+    .mascota {
+        font-size: 20px;
+    }
+    .Vidas {
+        font-size: 34px;
+    }   
+}
+.ataques {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ataquesJ, .ataquesE {
+    margin: 20px;
+    text-align: center;
+  }
+  #pp, #mascota-jugador, #mascota-enemigo {
+    color:red;
+  }
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mapa{
+    border: 2px solid white;
+}
+  
+  
